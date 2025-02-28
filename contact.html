@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(strsk.png);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-wrapper {
+            background-color: #f7c6f7;
+            padding: 40px 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group div {
+            width: 48%;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+            outline: none;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #e09fc3;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #1e90ff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .back-home-button {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          padding: 10px 20px;
+          font-size: 16px;
+          transition: background-color 0.3s ease; /* Add transition for smooth effect */
+          background-color: rgb(33, 33, 33);
+          color: aliceblue;
+        }
+        
+        .back-home-button:hover {
+          background-color: #7b5d5d; /* Change background color on hover */
+          cursor: pointer; /* Change cursor to pointer */
+        }
+        .back-home-button:hover {
+          border: 1px solid rgb(133, 28, 28);
+        }
+        .back-home-button:hover {
+          box-shadow: 2px 2px 5px rgba(201, 16, 16, 0.3);
+        }
+        .back-home-button:hover {
+          transform: scale(1.1); /* Increase size by 10% */
+        }
+        .back-home-button {
+          position: absolute; /* Or position: relative; if you want to position it relative to the container */
+          top: 90%; /* Adjust this value to move it vertically */
+          margin-left: -25%;
+          left: 600px; /* Adjust this value to move it horizontally */
+          /* Add other styles as needed */
+        }
+        .btn {
+          width: 150px; /* Adjust the width as needed */
+          height: 40px; /
+        }
+        .btn-1{
+          width: 150px; /* Adjust the width as needed */
+          height: 40px; 
+          padding: 10px;
+          margin: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    
+        <div class="form-wrapper">
+            <div class="form-content">
+                <h2>Get in Touch</h2>
+                <p>CONTACT ME!</p>
+                <form>
+                    <div class="form-group">
+                        <div>
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" placeholder="Please enter first name...">
+                        </div>
+                        <div>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" placeholder="Please enter last name...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="Please enter email...">
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" placeholder="Please enter phone number...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Please enter query..."></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <a href="../VALLESER_BSIT 3-2_PORTFOLIO/home.html" class="back-home-link"><button class="back-home-button">BACK HOME</button></a>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
